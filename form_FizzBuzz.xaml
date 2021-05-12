@@ -1,0 +1,31 @@
+﻿<Window x:Class="Code_Review.form_FizzBuzz"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Code_Review"
+        mc:Ignorable="d"
+        Title="form_FizzBuzz" Height="450" Width="800">
+    <Grid>
+        <RichTextBox x:Name="richTextBox_FizzBuzzOutput" HorizontalAlignment="Left" Height="100" Margin="32.323,208.091,0,0" VerticalAlignment="Top" Width="120">
+            <FlowDocument>
+                <Paragraph>
+                    <Run Text="Output"/>
+                </Paragraph>
+            </FlowDocument>
+        </RichTextBox>
+        <TextBox x:Name="textBox_Number" HorizontalAlignment="Left" Height="23" Margin="32.323,95.084,0,0" TextWrapping="Wrap" Text="Number" VerticalAlignment="Top" Width="120" TabIndex="2"/>
+        <Button x:Name="button_addFizzNode" Content="Add FizzBuzzNode" HorizontalAlignment="Left" Margin="171.561,68.027,0,0" VerticalAlignment="Top" Width="112.332" Click="button_addFizzNode_Click" TabIndex="3"/>
+        <TextBox x:Name="textBox_String" HorizontalAlignment="Left" Height="23" Margin="32.323,54.077,0,0" TextWrapping="Wrap" Text="String" VerticalAlignment="Top" Width="120" TabIndex="1"/>
+        <TextBox x:Name="textBox_RunTo" HorizontalAlignment="Left" Height="23" Margin="32.323,167.731,0,0" TextWrapping="Wrap" Text="RunTo" VerticalAlignment="Top" Width="120" TabIndex="4"/>
+        <Button x:Name="button_Run" Content="Run" HorizontalAlignment="Left" Margin="171.561,193.141,0,0" VerticalAlignment="Top" Width="112.332" Click="button_RunClick" TabIndex="5"/>
+        <RichTextBox x:Name="richTextBox_FizzNodeList" HorizontalAlignment="Left" Height="184.965" Margin="331.986,74.037,0,0" VerticalAlignment="Top" Width="129.371">
+            <FlowDocument>
+                <Paragraph>
+                    <Run Text="NodeList"/>
+                </Paragraph>
+            </FlowDocument>
+        </RichTextBox>
+
+    </Grid>
+</Window>
