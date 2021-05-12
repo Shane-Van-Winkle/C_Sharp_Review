@@ -26,10 +26,9 @@ namespace Code_Review
 
         FizzBuzzTree tree = new FizzBuzzTree();
 
+        //When the "Run" button is clicked, it has to run the fizzbuzz while using the fizzbuzz nodes in the tree.
         private void button_RunClick(object sender, RoutedEventArgs e)
         {
- 
-
             int runto = 0;
             Boolean correct = true;
             try
@@ -40,7 +39,7 @@ namespace Code_Review
             {
                 correct = false;
             }
-            //textBox_FizzNodeList.Text = (number * 2).ToString();
+            
             if (correct)
             {
                 richTextBox_FizzBuzzOutput.SelectAll();
