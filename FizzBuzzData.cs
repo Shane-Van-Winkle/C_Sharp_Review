@@ -23,8 +23,11 @@ namespace Code_Review
             this.fizzNumber = fizzNumber;
             this.fizzString = fizzString;
         }
-
-       
-
+        /*
+       public string toString()
+        {
+            return this.fizzNumber.ToString() + " : " + this.fizzString;
+        }
+        */
     }
 }
