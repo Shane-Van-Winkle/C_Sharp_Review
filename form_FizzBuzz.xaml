@@ -5,27 +5,36 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Code_Review"
         mc:Ignorable="d"
-        Title="form_FizzBuzz" Height="450" Width="800">
-    <Grid>
-        <RichTextBox x:Name="richTextBox_FizzBuzzOutput" HorizontalAlignment="Left" Height="100" Margin="32.323,208.091,0,0" VerticalAlignment="Top" Width="120">
+        Title="form_FizzBuzz" Height="501.158" Width="582.105">
+    <Grid Margin="0,0,23.79,4.737">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="115*"/>
+            <RowDefinition Height="304*"/>
+        </Grid.RowDefinitions>
+        <RichTextBox x:Name="richTextBox_FizzBuzzOutput" HorizontalAlignment="Left" Height="187.008" Margin="32,130.052,0,0" VerticalAlignment="Top" Width="120" Grid.Row="1" IsReadOnly="True" IsTabStop="False">
             <FlowDocument>
                 <Paragraph>
                     <Run Text="Output"/>
                 </Paragraph>
             </FlowDocument>
         </RichTextBox>
-        <TextBox x:Name="textBox_Number" HorizontalAlignment="Left" Height="23" Margin="32.323,95.084,0,0" TextWrapping="Wrap" Text="Number" VerticalAlignment="Top" Width="120" TabIndex="2"/>
+        <TextBox x:Name="textBox_Number" HorizontalAlignment="Left" Height="23" Margin="32.323,110.242,0,0" TextWrapping="Wrap" Text="Number" VerticalAlignment="Top" Width="120" TabIndex="2" Grid.RowSpan="2" AutoWordSelection="True"/>
         <Button x:Name="button_addFizzNode" Content="Add FizzBuzzNode" HorizontalAlignment="Left" Margin="171.561,68.027,0,0" VerticalAlignment="Top" Width="112.332" Click="button_addFizzNode_Click" TabIndex="3"/>
-        <TextBox x:Name="textBox_String" HorizontalAlignment="Left" Height="23" Margin="32.323,54.077,0,0" TextWrapping="Wrap" Text="String" VerticalAlignment="Top" Width="120" TabIndex="1"/>
-        <TextBox x:Name="textBox_RunTo" HorizontalAlignment="Left" Height="23" Margin="32.323,167.731,0,0" TextWrapping="Wrap" Text="RunTo" VerticalAlignment="Top" Width="120" TabIndex="4"/>
-        <Button x:Name="button_Run" Content="Run" HorizontalAlignment="Left" Margin="171.561,193.141,0,0" VerticalAlignment="Top" Width="112.332" Click="button_RunClick" TabIndex="5"/>
-        <RichTextBox x:Name="richTextBox_FizzNodeList" HorizontalAlignment="Left" Height="184.965" Margin="331.986,74.037,0,0" VerticalAlignment="Top" Width="129.371">
+        <TextBox x:Name="textBox_String" HorizontalAlignment="Left" Height="23" Margin="32.323,54.077,0,0" TextWrapping="Wrap" Text="String" VerticalAlignment="Top" Width="120" TabIndex="1" AutoWordSelection="True"/>
+        <TextBox x:Name="textBox_RunTo" HorizontalAlignment="Left" Height="23" Margin="32.323,52.626,0,0" TextWrapping="Wrap" Text="RunTo" VerticalAlignment="Top" Width="120" TabIndex="4" Grid.Row="1" AutoWordSelection="True"/>
+        <Button x:Name="button_Run" Content="Run" HorizontalAlignment="Left" Margin="171.561,78.036,0,0" VerticalAlignment="Top" Width="112.332" Click="button_RunClick" TabIndex="5" Grid.Row="1"/>
+        <RichTextBox x:Name="richTextBox_FizzNodeList" HorizontalAlignment="Left" Height="184.965" Margin="331.986,74.037,0,0" VerticalAlignment="Top" Width="129.371" Grid.RowSpan="2" IsReadOnly="True" IsTabStop="False">
             <FlowDocument>
                 <Paragraph>
                     <Run Text="NodeList"/>
                 </Paragraph>
             </FlowDocument>
         </RichTextBox>
+        <Label Content="String" HorizontalAlignment="Left" Margin="32,28.117,0,0" VerticalAlignment="Top" Width="57.095" Padding="0,5,5,5"/>
+        <Label Content="Number" HorizontalAlignment="Left" Margin="32.323,84.282,0,0" VerticalAlignment="Top" Width="57.095" Padding="0,5,5,5"/>
+        <Label Content="RunTo" HorizontalAlignment="Left" Margin="32,26.666,0,0" VerticalAlignment="Top" Width="57.095" Padding="0,5,5,5" RenderTransformOrigin="0.326,2.757" Grid.Row="1"/>
+        <Label Content="Output" HorizontalAlignment="Left" Margin="32,99.092,0,0" VerticalAlignment="Top" Width="57.095" Padding="0,5,5,5" RenderTransformOrigin="0.326,2.757" Grid.Row="1"/>
+        <Label Content="NodeList" HorizontalAlignment="Left" Margin="331.986,43.077,0,0" VerticalAlignment="Top" Width="57.095" Padding="0,5,5,5" RenderTransformOrigin="0.326,2.757"/>
 
     </Grid>
 </Window>
