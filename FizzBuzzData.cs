@@ -20,6 +20,7 @@ namespace Code_Review
 
         public FizzBuzzData(int fizzNumber, string fizzString)
         {
+            //Console.WriteLine("newData");
             this.fizzNumber = fizzNumber;
             this.fizzString = fizzString;
         }
